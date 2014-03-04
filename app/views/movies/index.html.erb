@@ -1,0 +1,11 @@
+<h1>Movies</h1>
+
+<ul>
+  <% @movies.each do |event| %>
+    <li>
+    <strong><%= event.title %></strong> (<%= event.rating %>): 
+     <%= number_to_currency(event.total_gross) %>
+    </li>
+  <% end %>
+</ul>
+
